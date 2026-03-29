@@ -1,0 +1,4 @@
+ffmpeg -i farmer.mp4 -c copy -movflags +faststart farmer_faststart.mp4
+
+ffmpeg -i bike.mp4 -c copy -movflags +faststart bike_faststart.mp4
+rm -f  bike.mp4  && mv bike_faststart.mp4 bike.mp4
